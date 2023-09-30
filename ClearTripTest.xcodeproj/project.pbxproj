@@ -21,6 +21,8 @@
 		098BCE9E2AC86D7100960D08 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098BCE9D2AC86D7100960D08 /* ListViewModel.swift */; };
 		098BCEA02AC874AD00960D08 /* MusicDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098BCE9F2AC874AD00960D08 /* MusicDataModel.swift */; };
 		098BCEA22AC874FB00960D08 /* MusicDataFetchingService .swift in Sources */ = {isa = PBXBuildFile; fileRef = 098BCEA12AC874FB00960D08 /* MusicDataFetchingService .swift */; };
+		098BCEA42AC87A7F00960D08 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098BCEA32AC87A7F00960D08 /* Bindable.swift */; };
+		098BCEA62AC87BFE00960D08 /* MusicDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098BCEA52AC87BFE00960D08 /* MusicDataFetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		098BCE9D2AC86D7100960D08 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		098BCE9F2AC874AD00960D08 /* MusicDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDataModel.swift; sourceTree = "<group>"; };
 		098BCEA12AC874FB00960D08 /* MusicDataFetchingService .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MusicDataFetchingService .swift"; sourceTree = "<group>"; };
+		098BCEA32AC87A7F00960D08 /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		098BCEA52AC87BFE00960D08 /* MusicDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDataFetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,8 @@
 				098BCE9D2AC86D7100960D08 /* ListViewModel.swift */,
 				098BCE9F2AC874AD00960D08 /* MusicDataModel.swift */,
 				098BCEA12AC874FB00960D08 /* MusicDataFetchingService .swift */,
+				098BCEA52AC87BFE00960D08 /* MusicDataFetcher.swift */,
+				098BCEA32AC87A7F00960D08 /* Bindable.swift */,
 				098BCE972AC86C7D00960D08 /* Dummydata */,
 				098BCE6D2AC862C600960D08 /* Main.storyboard */,
 				098BCE702AC862C900960D08 /* Assets.xcassets */,
@@ -274,9 +280,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				098BCE6C2AC862C600960D08 /* ListViewController.swift in Sources */,
+				098BCEA42AC87A7F00960D08 /* Bindable.swift in Sources */,
 				098BCEA02AC874AD00960D08 /* MusicDataModel.swift in Sources */,
 				098BCEA22AC874FB00960D08 /* MusicDataFetchingService .swift in Sources */,
 				098BCE682AC862C600960D08 /* AppDelegate.swift in Sources */,
+				098BCEA62AC87BFE00960D08 /* MusicDataFetcher.swift in Sources */,
 				098BCE9E2AC86D7100960D08 /* ListViewModel.swift in Sources */,
 				098BCE6A2AC862C600960D08 /* SceneDelegate.swift in Sources */,
 			);

@@ -7,13 +7,25 @@
 
 import UIKit
 import AVKit
+import Combine
+
+
 
 class ListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
+    
+    var listViewModel = ListViewModel()
+    
     let urlStr = "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3"
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        do {
+            try listViewModel.fetchMusicList()
+        } catch {
+            // show error
+            // ask for retry 
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -24,6 +36,11 @@ class ListViewController: UIViewController {
         }
         play(from: url)
     }
+    
+    func retry() {
+        
+    }
+    
     
     func play(from url:URL) {
         let player = AVPlayer(url: url)

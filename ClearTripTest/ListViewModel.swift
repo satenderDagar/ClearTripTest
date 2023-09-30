@@ -2,18 +2,15 @@ import Foundation
 
 class ListViewModel {
     
-    let listfetcher: ListFetching
-    var musicList = [MusicInfo]()
+    private let listfetcher: ListFetching
+    var musicList = Bindable<[MusicInfo]>()
     
-    
-    init(listfetcher: ListFetching) {
+    init(listfetcher: ListFetching = ListFetcher(serviceProvider: LocalMusicDataFetcher())) {
         self.listfetcher = listfetcher
     }
     
-    func fetchMusicList() {
-        musicList = listfetcher.getMusicList()
+    func fetchMusicList() throws {
+        let musicList = try listfetcher.getMusicList()
+        self.musicList = Bindable(value: musicList)
     }
-    
 }
-
-
