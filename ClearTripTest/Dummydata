@@ -1,0 +1,29 @@
+
+{
+    list: [
+        {
+            id: 1,
+            songName: "song1",
+            singer: "Arijit",
+            url: "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3",
+        },
+        {
+            id: 2,
+            songName: "song1",
+            singer: "Arijit",
+        },
+        {
+            id: 3,
+            songName: "song1",
+            url: "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3",
+        },
+        {
+            id: 4,
+            songName: "song1",
+        },
+    ]
+ }
+
+
+
+
